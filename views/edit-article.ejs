@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/style.css">
+
+<h1>Edit Article</h1>
+<form method="POST" action="/article/<%= article.id %>?_method=PUT">
+    <div>
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" value="<%= article.title %>">
+    </div>
+    <div>
+        <label for="content">Content</label>
+        <textarea id="content" name="content"><%= article.content %></textarea>
+    </div>
+    <button type="submit">Save Changes</button>
+</form>

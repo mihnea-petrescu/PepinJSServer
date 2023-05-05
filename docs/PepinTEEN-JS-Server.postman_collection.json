@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "5be320c7-4cd5-437f-bb81-4f56dc6b6528",
+		"name": "PepinTEEN-JS-Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3001/new-article",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"New Tittle\",\r\n    \"content\": \"New content\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/new-article"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/blog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3001/blog"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/article/ba12e769-e7e0-48aa-8fea-5f09fbdbcc7a",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Ana Are BANANE\",\r\n    \"content\": \"PepinTEEN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/article/{id}"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/article/54d05716-e5a8-43a8-9f85-a89bfb0f2aec",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3001/article/{id}"
+			},
+			"response": []
+		}
+	]
+}

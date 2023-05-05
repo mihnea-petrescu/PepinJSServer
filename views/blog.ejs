@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/style.css">
+
+<h1>Blog</h1>
+<% articles.forEach(function(article) { %>
+    <article id="<%= article.id %>">
+        <h2>
+            <%= article.title %>
+        </h2>
+        <p>
+            <%= article.content %>
+        </p>
+        <a href="/article/<%= article.id %>">Edit</a>
+        <form method="POST" action="/article/<%= article.id %>?_method=DELETE">
+            <button type="submit">Delete</button>
+        </form>
+    </article>
+    <% }); %>
